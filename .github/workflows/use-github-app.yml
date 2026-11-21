@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Get Token
       id: get_workflow_token
-      uses: venkatjk/workflow-application-token-action@v2
+      uses: peter-murray/workflow-application-token-action@v3
       with:
         application_id: ${{ vars.GH_APPLICATION_ID }}
         application_private_key: ${{ secrets.GH_APPLICATION_KEY }}
